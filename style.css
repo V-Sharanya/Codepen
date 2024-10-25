@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #454545;
+    color: #fff;
+}
+.heading{
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+.logo i{
+    color: #536DFE;
+    font-size: 50px;
+    margin: 10px;
+    margin-left: 20px;
+}
+h1 {
+    color: #536DFE;
+    position: relative;
+    transition: box-shadow 0.15s, transform 0.15s;
+    font-size: 50px;
+    margin: 5px;
+  }
+  
+  h1:hover {
+    transform: translateY(3px);
+  }
+.navbar{
+    display: flex;
+    margin: 20px auto;
+    gap: 25px;
+    float: right;
+    margin-right: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    border: none;
+}
+button{
+    width: 40px;
+    height: 40px;
+    background: var(--line-color);
+    border: none;
+    font-size: 20px;
+    color: var(--main-color);
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    cursor: pointer;
+}
+.button-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #536DFE;
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px,
+      rgba(27, 133, 219, 0.5) 5px 5px 10px;
+  }
+  
+  .button-container:hover {
+    transform: translateX(3px);
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40%;
+  } 
+
+.container {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    padding: 5px;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-bottom: 7px;
+    outline: 0;
+    font-size: 27px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    resize: none;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #536DFE;
+  }
+
+iframe {
+    width: 100%;
+    height: 97%;
+    background: #fff;
+    outline: 0;
+    border: 0;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+label i {
+    margin-left: 10px;
+    margin-right: 10px;
+    color:  #2b3fb5;
+    font-weight: bold;
+    font-size: large;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #000;
+    color:  #2f42af;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+}
+
+@media screen and (max-width:650px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left,.right{
+        flex: 1 0 100%;
+    }
+
+    
+}
